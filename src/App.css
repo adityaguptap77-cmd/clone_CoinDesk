@@ -1248,6 +1248,116 @@
   align-items: start;
 }
 
+.lower-ad-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+
+.lower-ad-label {
+  display: block;
+  padding: 10px 14px 0;
+  color: #7b7b7b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.lower-ad-art {
+  position: relative;
+  min-height: 212px;
+  margin: 10px 14px 0;
+  padding: 22px 18px;
+  overflow: hidden;
+  color: #111;
+  background: linear-gradient(135deg, #ffd84a, #23dce4);
+}
+
+.lower-ad-art strong {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.lower-ad-art p {
+  max-width: 170px;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.lower-ad-bars {
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  width: 112px;
+  height: 136px;
+  background:
+    linear-gradient(#ec008c 0 100%) 0 90px / 28px 16px no-repeat,
+    linear-gradient(#ec008c 0 100%) 26px 48px / 30px 68px no-repeat,
+    linear-gradient(#ec008c 0 100%) 54px 16px / 32px 126px no-repeat,
+    linear-gradient(#ec008c 0 100%) 82px 0 / 30px 136px no-repeat;
+}
+
+.lower-ad-copy {
+  padding: 18px 14px 20px;
+}
+
+.lower-ad-copy h2 {
+  margin: 0 0 16px;
+  color: #111;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.lower-ad-copy a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 126px;
+  min-height: 38px;
+  color: #fff;
+  background: #111;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lower-ad-list {
+  padding: 0 14px 18px;
+}
+
+.lower-ad-list article {
+  padding: 14px 0;
+  border-top: 1px solid #e4e4e4;
+}
+
+.lower-ad-list span {
+  display: block;
+  margin-bottom: 8px;
+  color: #8a8a8a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.lower-ad-list h3 {
+  margin: 0;
+  color: #111;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 .lower-shell .deep-feed {
   grid-column: 2;
 }
