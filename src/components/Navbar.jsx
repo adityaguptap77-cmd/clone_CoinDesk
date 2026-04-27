@@ -61,7 +61,7 @@ function NavMegaMenu({ menu }) {
                 ) : (
                   <>
                     <strong>
-                      CoinDesk: Policy
+                      Snapd: Policy
                       <br />
                       &amp; Regulation
                     </strong>

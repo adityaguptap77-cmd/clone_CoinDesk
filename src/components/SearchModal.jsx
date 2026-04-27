@@ -8,7 +8,7 @@ export default function SearchModal({ onClose }) {
         className="search-modal"
         role="dialog"
         aria-modal="true"
-        aria-label="Search CoinDesk"
+        aria-label="Search Snapd"
         onMouseDown={(event) => event.stopPropagation()}
       >
         <div className="search-input-row">

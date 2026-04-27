@@ -10,9 +10,9 @@ const speakers = [
 
 export default function ExploreSection() {
   return (
-    <section className="explore-section" aria-label="Explore more from CoinDesk">
+    <section className="explore-section" aria-label="Explore more from Snapd">
       <div className="explore-heading">
-        <h2>Explore more from CoinDesk</h2>
+        <h2>Explore more from Snapd</h2>
         <div className="carousel-controls" aria-label="Carousel controls">
           <button type="button" aria-label="Previous">
             ←
@@ -69,7 +69,7 @@ export default function ExploreSection() {
             ))}
           </div>
           <p className="api-link">
-            Need more data? Explore <a href="#">CoinDesk Data API</a>
+            Need more data? Explore <a href="#">Snapd Data API</a>
           </p>
         </article>
 
@@ -118,7 +118,7 @@ export default function ExploreSection() {
             {exploreVideos.map(([type, title]) => (
               <article key={title}>
                 <div className={`mini-video ${type}`}>
-                  <span>CoinDesk</span>
+                  <span>Snapd</span>
                 </div>
                 <p>{title}</p>
               </article>

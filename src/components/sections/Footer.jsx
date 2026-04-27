@@ -22,7 +22,7 @@ export default function Footer() {
               ))}
             </div>
           ))}
-          <div className="footer-stores" aria-label="Download CoinDesk app">
+          <div className="footer-stores" aria-label="Download Snapd app">
             <a href="#">
               Download on the
               <br />

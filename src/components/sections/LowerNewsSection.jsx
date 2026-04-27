@@ -63,7 +63,7 @@ export default function LowerNewsSection() {
             <span />
           </div>
           <div>
-            <h3>CoinDesk Headlines</h3>
+            <h3>Snapd Headlines</h3>
             <p>The biggest crypto news and ideas of the day.</p>
             <a href="#">Preview</a>
           </div>
@@ -74,7 +74,7 @@ export default function LowerNewsSection() {
         </label>
         <button type="button">Sign up</button>
         <p className="newsletter-note">
-          By signing up, you will receive emails about CoinDesk products and you agree to our
+          By signing up, you will receive emails about Snapd products and you agree to our
           <a href="#"> terms & conditions</a> and <a href="#">privacy policy</a>.
         </p>
       </aside>

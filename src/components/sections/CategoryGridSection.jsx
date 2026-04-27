@@ -3,7 +3,7 @@ import { ArrowIcon } from '../icons'
 
 export default function CategoryGridSection() {
   return (
-    <section className="category-grid-section" aria-label="CoinDesk category stories">
+    <section className="category-grid-section" aria-label="Snapd category stories">
       {categorySections.map((category) => (
         <article className="category-card" key={category.title}>
           <h2>

@@ -6,7 +6,7 @@ export default function Logo() {
           <i key={index} />
         ))}
       </span>
-      <span>CoinDesk</span>
+      <span>SNAPD</span>
     </a>
   )
 }

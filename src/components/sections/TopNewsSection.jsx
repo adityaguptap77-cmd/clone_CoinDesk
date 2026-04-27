@@ -71,7 +71,7 @@ export default function TopNewsSection() {
           <div className="lead-copy">
             <p>Markets</p>
             <h2>Crypto funds see cautious inflows as investors weigh rate-cut odds</h2>
-            <span>Latest market moves, context and analysis from CoinDesk.</span>
+            <span>Latest market moves, context and analysis from Snapd.</span>
           </div>
         </article>
 

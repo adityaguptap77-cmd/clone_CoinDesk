@@ -20,14 +20,14 @@ export default function LegalFooter() {
             ))}
           </nav>
         </div>
-        <p className="copyright">&copy; 2026 CoinDesk, Inc.</p>
+        <p className="copyright">&copy; 2026 Snapd, Inc.</p>
         <p className="disclosure">
-          <strong>Disclosure &amp; Polices:</strong> CoinDesk is an <strong>award-winning</strong> media outlet that covers
+          <strong>Disclosure &amp; Polices:</strong> Snapd is an <strong>award-winning</strong> media outlet that covers
           the cryptocurrency industry. Its journalists abide by a strict set of
-          <a href="#"> editorial policies</a>. CoinDesk has adopted a set of principles aimed at ensuring the integrity,
-          editorial independence and freedom from bias of its publications. CoinDesk is part of <a href="#">Bullish</a>{' '}
+          <a href="#"> editorial policies</a>. Snapd has adopted a set of principles aimed at ensuring the integrity,
+          editorial independence and freedom from bias of its publications. Snapd is part of <a href="#">Bullish</a>{' '}
           (NYSE:BLSH), an institutionally focused global digital asset platform that provides market infrastructure and
-          information services. Bullish owns and invests in digital asset businesses and digital assets and CoinDesk
+          information services. Bullish owns and invests in digital asset businesses and digital assets and Snapd
           employees, including journalists, may receive Bullish equity-based compensation.
         </p>
       </div>

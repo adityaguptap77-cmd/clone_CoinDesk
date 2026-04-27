@@ -1,5 +1,5 @@
 export const markets = [
-  ['CoinDesk 20', '2,117.09', '2.26%'],
+  ['Snapd 20', '2,117.09', '2.26%'],
   ['Bitcoin', '$77,606.96', '1.57%'],
   ['Ethereum', '$2,322.10', '3.94%'],
   ['XRP', '$1.42', '2.82%'],
@@ -9,7 +9,7 @@ export const markets = [
 export const latest = [
   {
     time: '6:45 PM',
-    title: 'CoinDesk 20 performance update: Uniswap (UNI) drops 3.9%, leading...',
+    title: 'Snapd 20 performance update: Uniswap (UNI) drops 3.9%, leading...',
     excerpt: 'Ether (ETH), down 2.9% since Wednesday, was also an...',
   },
   {
@@ -94,7 +94,7 @@ export const priceRows = [
 
 export const exploreVideos = [
   ['satoshi', 'Finding Satoshi: The Investigation Crypto Didnt Want'],
-  ['anchor', 'CoinDesk Daily: Latest Market Moves'],
+  ['anchor', 'Snapd Daily: Latest Market Moves'],
   ['panel', 'SEC Freezes DeFi Front Ends'],
   ['bitcoin', 'Is $1M BTC Closer Than We Think?'],
   ['trial', 'Clarity AI, Morgan Stanley and BTC ETFs'],
@@ -193,20 +193,20 @@ export const footerColumns = [
     ['Contact', ['Contact Us', 'Accessibility', 'Advertise', 'Media Kit', 'Sitemap', 'System status']],
     [
       'Newsletters',
-      ['CoinDesk Headlines', 'Crypto Daybook Americas', 'The Protocol', 'State of Crypto', 'Crypto for Advisors', 'Crypto Long & Short'],
+      ['Snapd Headlines', 'Crypto Daybook Americas', 'The Protocol', 'State of Crypto', 'Crypto for Advisors', 'Crypto Long & Short'],
     ],
   ],
   [
     ['News', ['Markets', 'Finance', 'Tech', 'Policy', 'Focus']],
-    ['Videos', ['CoinDesk Daily', "Editor's Picks", 'Shorts', 'Spotlight']],
-    ['Podcasts', ['CoinDesk Podcast Network', 'Markets Outlook', 'Gen C']],
+    ['Videos', ['Snapd Daily', "Editor's Picks", 'Shorts', 'Spotlight']],
+    ['Podcasts', ['Snapd Podcast Network', 'Markets Outlook', 'Gen C']],
   ],
   [
     ['Cryptocurrencies', ['Prices', 'Bitcoin (BTC)', 'Ethereum (ETH)', 'XRP', 'Solana (SOL)']],
     ['Data & Indices', ['Market Data', 'Index Offering', 'API', 'Research Insights', 'Documentation and Governance']],
   ],
   [
-    ['Consensus', ['Consensus Miami', 'CoinDesk: Policy & Regulation', 'Webinars']],
+    ['Consensus', ['Consensus Miami', 'Snapd: Policy & Regulation', 'Webinars']],
     ['Sponsored', ['Bitcoin Treasuries Theme Week', 'Thought Leadership', 'Press Release', 'MEXC', 'Phemex', 'Stellar']],
     ['Research', ['Research Hub', 'Exchange Benchmark']],
   ],
@@ -265,7 +265,7 @@ export const navMenus = {
       },
       {
         heading: 'Newsletters',
-        links: ['CoinDesk Headlines', 'Crypto Daybook Americas', 'State of Crypto', 'Crypto Long & Short', 'Crypto for Advisors', 'The Protocol'],
+        links: ['Snapd Headlines', 'Crypto Daybook Americas', 'State of Crypto', 'Crypto Long & Short', 'Crypto for Advisors', 'The Protocol'],
         action: 'See all newsletters',
       },
       {
@@ -279,12 +279,12 @@ export const navMenus = {
     columns: [
       {
         heading: 'Videos',
-        links: ['Public Keys at NYSE', 'CoinDesk Spotlight', 'Markets Outlook', 'CoinDesk Daily', 'Gen C', 'Blockspace Media', 'Shorts'],
+        links: ['Public Keys at NYSE', 'Snapd Spotlight', 'Markets Outlook', 'Snapd Daily', 'Gen C', 'Blockspace Media', 'Shorts'],
         action: 'See all videos',
       },
       {
         heading: 'Podcasts',
-        links: ['Public Keys at NYSE', 'CoinDesk Podcast Network', 'Markets Outlook', 'Gen C'],
+        links: ['Public Keys at NYSE', 'Snapd Podcast Network', 'Markets Outlook', 'Gen C'],
         action: 'See all podcasts',
       },
     ],
@@ -297,7 +297,7 @@ export const navMenus = {
         type: 'consensus',
       },
       {
-        title: 'CoinDesk: Policy & Regulation',
+        title: 'Snapd: Policy & Regulation',
         type: 'policy-regulation',
       },
     ],
