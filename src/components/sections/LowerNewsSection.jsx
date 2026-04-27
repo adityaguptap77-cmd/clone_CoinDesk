@@ -7,7 +7,7 @@ export default function LowerNewsSection() {
       <aside className="lower-ad-card" aria-label="Advertisement">
         <span className="lower-ad-label">Sponsored</span>
         <div className="lower-ad-art" aria-hidden="true">
-          <strong>CoinDesk</strong>
+          <strong>Snapd</strong>
           <p>Stay ahead of the market</p>
           <div className="lower-ad-bars" />
         </div>
