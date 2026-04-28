@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ArrowIcon } from '../icons'
 
-const TEN_MINUTES_IN_SECONDS = 10 * 60
+const SIXTY_MINUTES_IN_SECONDS = 60 * 60
 
 function formatTimeUnit(value) {
   return String(value).padStart(2, '0')
 }
 
 export default function CountdownBanner() {
-  const [remainingSeconds, setRemainingSeconds] = useState(TEN_MINUTES_IN_SECONDS)
+  const [remainingSeconds, setRemainingSeconds] = useState(SIXTY_MINUTES_IN_SECONDS)
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -43,7 +43,7 @@ export default function CountdownBanner() {
     <section className="countdown-banner" aria-label="Consensus registration countdown">
       <div>
         <h1>Consensus 2026</h1>
-        <p>Last Chance! Register by April 24 at 4 p.m. ET</p>
+        <p>Last Chance! Register by May 24 at 4 p.m. ET</p>
       </div>
       <div className="countdown" aria-label={`${remainingSeconds} seconds remaining`}>
         {timeParts.map(([value, label]) => (
