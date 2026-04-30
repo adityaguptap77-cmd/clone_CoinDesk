@@ -1,13 +1,13 @@
-import { legalLinks, socialLinks } from '../../api/coindeskData'
+import { makePageLink } from '../../pages/pageRegistry'
 
-export default function LegalFooter() {
+export default function LegalFooter({ legalLinks, socialLinks }) {
   return (
     <section className="legal-footer" aria-label="Legal and social links">
       <div className="legal-inner">
         <div className="legal-top">
           <nav className="legal-links" aria-label="Legal links">
             {legalLinks.map((link) => (
-              <a href="#" key={link}>
+              <a href={makePageLink(link)} key={link}>
                 {link}
               </a>
             ))}

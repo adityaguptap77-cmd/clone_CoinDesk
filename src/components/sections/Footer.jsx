@@ -1,7 +1,7 @@
-import { footerColumns } from '../../api/coindeskData'
 import Logo from '../Logo'
+import { makePageLink } from '../../pages/pageRegistry'
 
-export default function Footer() {
+export default function Footer({ footerColumns }) {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
@@ -14,7 +14,7 @@ export default function Footer() {
                 <nav key={heading} aria-label={heading}>
                   <h2>{heading}</h2>
                   {links.map((link) => (
-                    <a href="#" key={link}>
+                    <a href={makePageLink(link)} key={link}>
                       {link}
                     </a>
                   ))}

@@ -1,3 +1,11 @@
+export const countdownBanner = {
+  title: 'Consensus 2026',
+  message: 'Last Chance! Register by May 24 at 4 p.m. ET',
+  durationSeconds: 60 * 60,
+  ctaLabel: 'Register now',
+  ctaHref: '/consensus-2026',
+}
+
 export const markets = [
   ['Snapd 20', '2,117.09', '2.26%'],
   ['Bitcoin', '$77,606.96', '1.57%'],

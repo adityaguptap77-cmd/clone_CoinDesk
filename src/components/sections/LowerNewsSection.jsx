@@ -1,7 +1,7 @@
-import { newsLinks, thumbnailStories } from '../../api/coindeskData'
 import { ArrowIcon, EnvelopeIcon } from '../icons'
+import { makePageLink } from '../../pages/pageRegistry'
 
-export default function LowerNewsSection() {
+export default function LowerNewsSection({ newsLinks, thumbnailStories }) {
   return (
     <div className="lower-shell">
       <aside className="lower-ad-card" aria-label="Advertisement">
@@ -13,7 +13,7 @@ export default function LowerNewsSection() {
         </div>
         <div className="lower-ad-copy">
           <h2>Discover deeper crypto market coverage and daily intelligence.</h2>
-          <a href="#">Learn more</a>
+          <a href={makePageLink('Research Hub')}>Learn more</a>
         </div>
         <div className="lower-ad-list">
           <article>
@@ -65,7 +65,7 @@ export default function LowerNewsSection() {
           <div>
             <h3>Snapd Headlines</h3>
             <p>The biggest crypto news and ideas of the day.</p>
-            <a href="#">Preview</a>
+            <a href={makePageLink('Snapd Headlines')}>Preview</a>
           </div>
         </div>
         <label>
@@ -75,7 +75,8 @@ export default function LowerNewsSection() {
         <button type="button">Sign up</button>
         <p className="newsletter-note">
           By signing up, you will receive emails about Snapd products and you agree to our
-          <a href="#"> terms & conditions</a> and <a href="#">privacy policy</a>.
+          <a href={makePageLink('Terms of Use')}> terms & conditions</a> and{' '}
+          <a href={makePageLink('Privacy')}>privacy policy</a>.
         </p>
       </aside>
     </div>

@@ -1,7 +1,6 @@
-import { searchAssets, searchNews } from '../api/coindeskData'
 import { SearchIcon } from './icons'
 
-export default function SearchModal({ onClose }) {
+export default function SearchModal({ searchAssets, searchNews, onClose }) {
   return (
     <div className="search-overlay" role="presentation" onMouseDown={onClose}>
       <section

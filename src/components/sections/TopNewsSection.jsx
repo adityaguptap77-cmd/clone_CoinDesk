@@ -1,9 +1,8 @@
-import { featured, latest, lowerLatest, markets } from '../../api/coindeskData'
 import { ArrowIcon } from '../icons'
 
-const allLatest = [...latest, ...lowerLatest]
+export default function TopNewsSection({ featured, latest, lowerLatest, markets }) {
+  const allLatest = [...latest, ...lowerLatest]
 
-export default function TopNewsSection() {
   return (
     <div className="content-shell">
       <aside className="latest-panel" aria-label="Latest crypto news">

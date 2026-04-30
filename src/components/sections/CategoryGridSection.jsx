@@ -1,13 +1,15 @@
-import { categorySections } from '../../api/coindeskData'
 import { ArrowIcon } from '../icons'
+import { makePageLink } from '../../pages/pageRegistry'
 
-export default function CategoryGridSection() {
+export default function CategoryGridSection({ categorySections }) {
   return (
     <section className="category-grid-section" aria-label="Snapd category stories">
       {categorySections.map((category) => (
         <article className="category-card" key={category.title}>
           <h2>
-            {category.title} <ArrowIcon />
+            <a href={makePageLink(category.title)}>
+              {category.title} <ArrowIcon />
+            </a>
           </h2>
           <div className="category-layout">
             <div className="category-lead">

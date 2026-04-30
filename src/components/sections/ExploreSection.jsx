@@ -1,6 +1,6 @@
-import { exploreVideos, priceRows } from '../../api/coindeskData'
 import { ArrowIcon } from '../icons'
 import Logo from '../Logo'
+import { makePageLink } from '../../pages/pageRegistry'
 
 const speakers = [
   ['Michael Saylor', 'Founder & Executive Chairman', 'STRATEGY'],
@@ -8,7 +8,7 @@ const speakers = [
   ['Amy Oldenburg', 'Managing Director', 'MORGAN STANLEY'],
 ]
 
-export default function ExploreSection() {
+export default function ExploreSection({ exploreVideos, priceRows }) {
   return (
     <section className="explore-section" aria-label="Explore more from Snapd">
       <div className="explore-heading">
@@ -69,7 +69,7 @@ export default function ExploreSection() {
             ))}
           </div>
           <p className="api-link">
-            Need more data? Explore <a href="#">Snapd Data API</a>
+            Need more data? Explore <a href={makePageLink('API')}>Snapd Data API</a>
           </p>
         </article>
 

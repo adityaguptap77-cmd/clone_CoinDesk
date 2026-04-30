@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { countdownBanner } from '../../api/coindeskData'
 import { ArrowIcon } from '../icons'
 
 const SIXTY_MINUTES_IN_SECONDS = 60 * 60
@@ -7,8 +8,8 @@ function formatTimeUnit(value) {
   return String(value).padStart(2, '0')
 }
 
-export default function CountdownBanner() {
-  const [remainingSeconds, setRemainingSeconds] = useState(SIXTY_MINUTES_IN_SECONDS)
+export default function CountdownBanner({ banner = countdownBanner }) {
+  const [remainingSeconds, setRemainingSeconds] = useState(banner.durationSeconds ?? SIXTY_MINUTES_IN_SECONDS)
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -42,8 +43,8 @@ export default function CountdownBanner() {
   return (
     <section className="countdown-banner" aria-label="Consensus registration countdown">
       <div>
-        <h1>Consensus 2026</h1>
-        <p>Last Chance! Register by May 24 at 4 p.m. ET</p>
+        <h1>{banner.title}</h1>
+        <p>{banner.message}</p>
       </div>
       <div className="countdown" aria-label={`${remainingSeconds} seconds remaining`}>
         {timeParts.map(([value, label]) => (
@@ -53,8 +54,8 @@ export default function CountdownBanner() {
           </span>
         ))}
       </div>
-      <a className="register-button" href="#">
-        Register now <ArrowIcon />
+      <a className="register-button" href={banner.ctaHref}>
+        {banner.ctaLabel} <ArrowIcon />
       </a>
       <button className="close-ad" type="button" aria-label="Close banner">
         x

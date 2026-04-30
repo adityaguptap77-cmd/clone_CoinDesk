@@ -1,6 +1,6 @@
-import { navMenus } from '../api/coindeskData'
 import { ArrowIcon, GlobeIcon, SearchIcon } from './icons'
 import Logo from './Logo'
+import { makePageLink } from '../pages/pageRegistry'
 
 function NavMegaMenu({ menu }) {
   const menuClass = menu.eventCards ? 'events-menu' : menu.columns ? `columns-menu columns-${menu.columns.length}` : ''
@@ -16,7 +16,7 @@ function NavMegaMenu({ menu }) {
       {menu.dataItems && (
         <div className="nav-mega-grid">
           {menu.dataItems.map((item) => (
-            <a href="#" role="menuitem" key={item.title}>
+            <a href={makePageLink(item.title)} role="menuitem" key={item.title}>
               <strong>{item.title}</strong>
               <span>{item.description}</span>
             </a>
@@ -31,13 +31,13 @@ function NavMegaMenu({ menu }) {
               <h3>{column.heading}</h3>
               <div>
                 {column.links.map((link) => (
-                  <a href="#" role="menuitem" key={link}>
+                  <a href={makePageLink(link)} role="menuitem" key={link}>
                     {link}
                   </a>
                 ))}
               </div>
               {column.action && (
-                <a className="nav-column-action" href="#" role="menuitem">
+                <a className="nav-column-action" href={makePageLink(column.action)} role="menuitem">
                   {column.action} <ArrowIcon />
                 </a>
               )}
@@ -49,7 +49,7 @@ function NavMegaMenu({ menu }) {
       {menu.eventCards && (
         <div className="event-menu-grid">
           {menu.eventCards.map((event) => (
-            <a className="event-menu-card" href="#" role="menuitem" key={event.title}>
+            <a className="event-menu-card" href={makePageLink(event.title)} role="menuitem" key={event.title}>
               <h3>{event.title}</h3>
               <span className={`event-menu-art ${event.type}`}>
                 {event.type === 'consensus' ? (
@@ -80,7 +80,7 @@ function NavMegaMenu({ menu }) {
 
 function NavItem({ label, menu }) {
   if (!menu) {
-    return <a href="#">{label}</a>
+    return <a href={makePageLink(label)}>{label}</a>
   }
 
   return (
@@ -93,7 +93,7 @@ function NavItem({ label, menu }) {
   )
 }
 
-export default function Navbar({ onSearchOpen }) {
+export default function Navbar({ navMenus, onSearchOpen }) {
   return (
     <header className="site-header">
       <Logo />

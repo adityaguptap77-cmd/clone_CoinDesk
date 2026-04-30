@@ -1,7 +1,6 @@
-import { mostRead, opinionItems } from '../../api/coindeskData'
 import { ArrowIcon } from '../icons'
 
-export default function PopularSection() {
+export default function PopularSection({ mostRead, opinionItems }) {
   return (
     <section className="popular-section" aria-label="Opinion and most read stories">
       <aside className="opinion-card">
